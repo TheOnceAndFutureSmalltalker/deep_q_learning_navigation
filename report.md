@@ -25,9 +25,17 @@ Caching technique
 The project is written in Python 3.6 on a Jupyter notebook.  It requires PyTorch, NumPy, and Matlab libraries.  The environment is a Unity implementation which has a Python interface.    
 
 ### Implementation
-I used a simple neural network with 2 fully connected hidden layers and ReLu     .  This class was based on the implementation from the Udacity Lesson on Deep Q Learning exercise.  This implementation is seen in the class QNetwork on line   .  It is a simple implementation using PyTorch.
+
+My implementation started with what was provided in the Udacity 
+
+I used a simple neural network with 2 fully connected hidden layers and ReLu     .  Since the input state is a vector of values and not an image, there was no need for convolutional layers.  This class was based on the implementation from the Udacity Lesson on Deep Q Learning exercise.  This implementation is seen in the class QNetwork on line   .  It is a simple implementation using PyTorch.
 
 The QNetwork depends on the class     which implements the caching mechanism
+
+
+Training code is implemented in the Jupyter Notebook file      . under the heading 
+
+
 
 ## Results
 
