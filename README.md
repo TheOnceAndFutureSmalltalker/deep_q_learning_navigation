@@ -6,8 +6,10 @@ The code in this project uses a neural network and Deep Q Learning to find Q val
 
 File | Description
 ------------ | -------------
-Navigation.ipynb | Jupyter notebook of runnable code that trains the agent 
-checkpoint.pth | Saved weights of Q-Learning neural network
+checkpoint.pth | Saved weights of Q-Learning neural network.
+Navigation.ipynb | Jupyter notebook of runnable code that trains the agent.
+report.md | A discussion of the project and the results.
+
 
 ## Dependencies
 
