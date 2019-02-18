@@ -13,7 +13,7 @@ report.md | A discussion of the project and the results.
 
 ## Dependencies
 
-To run this code, you must have Python 3.6, Jupyter, PyTorch, NumPy, and Matplotlib installed.  you must also have Jupyter Notebook
+To run this code, you must have Python 3.6, Jupyter, PyTorch, NumPy, and Matplotlib installed.  You must also have the 
 
 ## Instructions
 
