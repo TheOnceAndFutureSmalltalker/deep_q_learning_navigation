@@ -8,7 +8,7 @@ The code in this project uses a neural network and Deep Q-Learning to estimate t
 <p align="center"><b>Simulated Environment of Yellow and Blue Bananas</b></p>
 
 ## Deliverable Files
-These are the deliverables for Navigation project  for Udacity's Deep Reinforcement Nanodegree.
+
 File | Description
 ------------ | -------------
 checkpoint.pth | Saved weights of Q-Learning neural network.
