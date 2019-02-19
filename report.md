@@ -48,7 +48,7 @@ Finally, the training algorithm is implemented in Section 8 of Navigation.ipynb.
 
 ## Results
 
-I ran the training several times.  I teaked several of the parameters, but kept returning to the original values as the most productive.  The last qualifying training session is shown at the bottom of the notebook file Navigation.ipynb Section 8.  In this run I was able to satisfy the rubric of 100 episodes averaging a reward of 13 or more.  At the 600th episode, I had a running average over the previous 100 episodes of 14.3.  A plot of these training results in rewards per episode is shown below.  The final weights for the neural network are fond in the file checkpoint.pth.
+I ran the training several times.  I tweaked several of the parameters, but kept returning to the original values as the most productive.  The last qualifying training session is shown at the bottom of the notebook file Navigation.ipynb Section 8.  In this run I was able to satisfy the rubric of 100 episodes averaging a reward of 13 or more.  At the 600th episode, I had a running average over the previous 100 episodes of 14.3.  A plot of these training results in rewards per episode is shown below.  The final weights for the neural network are found in the file checkpoint.pth.
 
 <br />
 <br />
@@ -63,5 +63,5 @@ First, I would like to continue training until the score stabilizes at some maxi
 
 Next, I would like to increase the size of the network to see if that has any effect one things.  This would be increasing both the number of layers and size of the layers.  Again, this is very time consuming.
 
-Finally, there are some additional techniques for Deep Q-Learning I would like to explore.  Primarily, I would like to explore Prioritized Experience Replay.  Instead of sampling from replay buffer at random for training neural network, the tuples in the replay buffer are prioritized by the TD error associated with them.  This makes sure makes sure experiences with the most error are revisited to improve the model.  
+Finally, there are some additional techniques for Deep Q-Learning I would like to explore.  Primarily, I would like to explore Prioritized Experience Replay.  Instead of sampling from replay buffer at random for training neural network, the tuples in the replay buffer are prioritized by the TD error associated with them.  This makes sure experiences with the most error are revisited to improve the model.  This is very similar to boosting.
 
