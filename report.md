@@ -36,23 +36,24 @@ The project is written in Python 3.6 on a Jupyter notebook.  It requires PyTorch
 
 ### Implementation
 
-My implementation started with what was provided in the Udacity with some modifications.  The four main components of the implementation are the QNetwork class, the model class,   and the training algorithm mentioned above 
+My implementation started with what was provided in the Udacity with some modifications.  The four main components of the implementation are the QNetwork class, the Agent class, the ReplayBuffer class, and the training algorithm mentioned above.
 
+The QNetwork class is implemented in the Navigation.ipynb file Section 6.  It is defines the architecture and initializes the neural network described above.  It also conducts forward propagation which is the q* functionality.  The neural network is implemented using PyTorch. 
 
-The neural network described above was implemented in the QNetwork class found in Jupyter Notebook file       under heading 
+The Agent class is implemented in the Navigation.ipynb Section 7.  It depends on the QNetwork class and the ReplayBuffer class.  Its main responsibilities are to determine an action based on a current state, and to take a given action from a given state.  It is also resposible for maintaining the ReplayBuffer and conducting back propagation on the neural network.
 
-This class was based on the implementation from the Udacity Lesson on Deep Q Learning exercise.  This implementation is seen in the class QNetwork on line   .  It is a simple implementation using PyTorch.
+The ReplayBuffer class is also implemented in Section 7 of Navigation.ipynb.  It is responsible for maintaining experienced tuples and provided an sample of what is currently in its cached for purposes of training the model.
 
-The QNetwork depends on the class     which implements the caching mechanism
-
-
-Training code is implemented in the Jupyter Notebook file      . under the heading 
-
-
+Finally, the training algorithm is implemented in Section 8 of Navigation.ipynb.  
 
 ## Results
 
-I ran he training several times.  I teaked several of the parameters, but kept returning to the original values and the most productive.  
+I ran the training several times.  I teaked several of the parameters, but kept returning to the original values as the most productive.  The last qualifying training session is shown at the bottom of the notebook file Navigation.ipynb Section 8.  In this run I was able to satisfy the rubric of 100 episodes averaging a reward of 13 or more.  At the 600th episode, I had a running average over the previous 100 episodes of 14.3.  A plot of these training results in rewards per episode is shown below.  The final weights for the neural network are fond in the file checkpoint.pth.
+
+<br />
+<br />
+<p align="center"><img src="https://github.com/TheOnceAndFutureSmalltalker/deep_q_learning_navigation/blob/master/images/scores.JPG"  /> </p>
+<p align="center"><b>Rewards vs Episodes While Training </b></p>
 
 ## Discussion
 
