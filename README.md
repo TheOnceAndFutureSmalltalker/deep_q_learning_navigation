@@ -4,7 +4,7 @@ The code in this project uses a neural network and Deep Q Learning to find Q val
 
 <br />
 <br />
-<p align="center"><img src='examples/vid_frame_0389.png' width="600"> </p>
+<p align="center"><img src="https://github.com/TheOnceAndFutureSmalltalker/deep_q_learning_navigation/blob/master/images/environment.JPG" width="400px" /> </p>
 <p align="center"><b>Simulated Environment of Yellow and Blue Bananas <a href="https://youtu.be/fcZUdGBETrk">(watch on YouTube)</a></b></p>
 
 ## Deliverable Files
