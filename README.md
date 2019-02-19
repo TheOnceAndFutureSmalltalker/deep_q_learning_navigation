@@ -1,6 +1,6 @@
-# Deep Q Learning Navigation
-These are the deliverables for Navigation for Udacity's Deep Reinforcement Nanodegree.
-The code in this project uses a neural network and Deep Q Learning to find Q value function for an agent trying to navigate a world of yellow and blue bananas.  The goal is to pick up as many yellow bananas as possible while not picking up any blue bananas.
+# Deep Q-Learning Navigation
+
+The code in this project uses a neural network and Deep Q-Learning to estimate the q* function for an agent trying to navigate a world of yellow and blue bananas.  The agent tries to pick up as many yellow bananas as possible while not picking up any blue bananas.  Each yellow banana has a reward of 1 and each blue banana has a reward of -1. The agent can take actions move forward, move backward, turn left, and turn right.  The current environment state is described by a vector of 37 values including things like location, velocity, etc.  The goal is for the agent to maximize his reward.  More specifically, the goal for this project, is for 100 consecutive episodes to have an average reward of over 13.  
 
 <br />
 <br />
@@ -8,7 +8,7 @@ The code in this project uses a neural network and Deep Q Learning to find Q val
 <p align="center"><b>Simulated Environment of Yellow and Blue Bananas</b></p>
 
 ## Deliverable Files
-
+These are the deliverables for Navigation project  for Udacity's Deep Reinforcement Nanodegree.
 File | Description
 ------------ | -------------
 checkpoint.pth | Saved weights of Q-Learning neural network.
