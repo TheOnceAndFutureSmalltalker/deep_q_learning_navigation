@@ -52,7 +52,15 @@ Training code is implemented in the Jupyter Notebook file      . under the headi
 
 ## Results
 
-I ran he training several times.  I teaked several of the parameters, but kept returning
+I ran he training several times.  I teaked several of the parameters, but kept returning to the original values and the most productive.  
 
 ## Discussion
+
+There are several modificatons I could make to the design and implementation above to possibly improve performance and maybe training time (always an issue with nerual networks!).
+
+First, I would like to continue training until the score stabilizes at some maximum value just to see how well I can get the agent to perform.  The main reason I did not do this is time (and money).  
+
+Next, I would like to increase the size of the network to see if that has any effect one things.  This would be increasing both the number of layers and size of the layers.  Again, this is very time consuming.
+
+Finally, there are some additional techniques for Deep Q-Learning I would like to explore.  Primarily, I would like to explore Prioritized Experience Replay.  Instead of sampling from replay buffer at random for training neural network, the tuples in the replay buffer are prioritized by the TD error associated with them.  This makes sure makes sure experiences with the most error are revisited to improve the model.  
 
