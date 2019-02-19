@@ -11,7 +11,7 @@ The purpose of this poject was to use he deep reinforcement learning process kno
 
 ## Design and Implementation
 
-Deep Q-Learning is a technique for finding the Q value function for a given agent in a given environment.  It involves using a neural network as a non-linear function approximator for that function.  It employs the Q-Learning technique to update the Q function.  The input to the neural network is the current state of the environment (sometimes several consecutive states can be stacked as a single input).  This could be an image, a vector of state values, or any other numerial representation of the state of the environment.  The output is a vector of estimated rewards where each entry in the vector represents the reward for one of the possible actions to be taken from that state. Once this vector is generated, the next action can be selected by max, stochastically, using epsilon-greedy, etc.  This output can also be used to calcuate TD values and determine error for the system.  The TD, or Temporal Difference, values are estimates of ground truth using the Q Function itself.
+Deep Q-Learning is a technique for finding the Q value function for a given agent in a given environment.  It involves using a neural network as a non-linear function approximator for that function.  It employs the Q-Learning technique to update the Q function.  The input to the neural network is the current state of the environment (sometimes several consecutive states can be stacked as a single input).  This could be an image, a vector of state values, or any other numerical representation of the state of the environment.  The output is a vector of estimated rewards where each entry in the vector represents the reward for one of the possible actions to be taken from that state. Once this vector is generated, the next action can be selected by max, stochastically, using epsilon-greedy, etc.  This output can also be used to calculate TD values and determine error for the system.  The TD, or Temporal Difference, values are estimates of ground truth using the Q Function itself.
 
 In using such a neural network, the sequence of action-state tuples can become highly correlated.  This problem can be rectified by using the *Experience Replay* technique.  This involves saving the experience tuples in a cache and training from a randomly selected sample of this cache instead of training on each successive tuple as it is generated.
 
@@ -23,7 +23,10 @@ I used a simple neural network with 2 fully connected hidden layers and ReLu act
 
 I also employed the *Experience Replay* and *Fixed Q-Targets* techniques mentioned above.  The full algorithm is shown below, taken from Udacity lesson materials.
 
-
+<br />
+<br />
+<p align="center"><img src="https://github.com/TheOnceAndFutureSmalltalker/deep_q_learning_navigation/blob/master/images/algorithm.JPG"  /> </p>
+<p align="center"><b>Deep Q-Learning Algorithm </b></p>
 
 The environment is provided in a Unity library and required nothing of me.
 
