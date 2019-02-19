@@ -4,11 +4,16 @@
 
 The purpose of this poject was to use he deep reinforcement learning process known as deep Q Learning to train an agent to navigate a simulated environment full of yellow and blue bananas and gather up as many yellow bananas as possible while ignoring blue bananas.
 
+<br />
+<br />
+<p align="center"><img src="https://github.com/TheOnceAndFutureSmalltalker/deep_q_learning_navigation/blob/master/images/environment.JPG" width="400px" /> </p>
+<p align="center"><b>Simulated Environment of Yellow and Blue Bananas <a href="https://youtu.be/fcZUdGBETrk">(watch on YouTube)</a></b></p>
+
 ## Design and Implementation
 
 ### Design
 
-Deep Q Learning is a technique for finding the Q value function for a given agent in  agiven environment.  It involves using a neural network as the Q value function for an agent.  The neural network is trained
+Deep Q Learning is a technique for finding the Q value function for a given agent in a given environment.  It involves using a neural network as the Q value function for an agent.  The neural network is trained
 
 fundamentally SARSA
 
